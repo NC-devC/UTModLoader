@@ -2,6 +2,6 @@
 data.win
 test/data.win
 test/Undertale/data.win
-//builds.
+// Builds.
 API/UTModLoader/Release
 API/UTModLoader/.vs

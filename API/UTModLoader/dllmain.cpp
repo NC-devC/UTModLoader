@@ -1,5 +1,4 @@
-﻿// dllmain.cpp : Определяет точку входа для приложения DLL.
-#include "pch.h"
+﻿#include "pch.h"
 #include <stdlib.h>
 #include <iostream>
 #include <windows.h>
@@ -31,6 +30,17 @@ extern "C" {
 
     func string GetGamePath()
     {
-        return "Idk how to get this but will fix later";
+        char buffer[MAX_PATH];
+        GetModuleFileNameA(NULL, buffer, sizeof(buffer));
+        string path(buffer);
+        size_t pos = path.find_last_of("\\/");
+        string result = path.substr(0, pos);
+        return result;
+    }
+
+    func string GetModsPath()
+    {
+        string result = GetGamePath() + "\Mods";
+        return result;
     }
 }
