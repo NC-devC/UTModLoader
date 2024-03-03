@@ -2,7 +2,8 @@
 #include "pch.h"
 #include <stdlib.h>
 #include <iostream>
-#include <fstream>
+#include <windows.h>
+
 using namespace std;
 #define func __declspec(dllexport)
 
@@ -23,8 +24,13 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 }
 
 extern "C" {
-    func double TestFunction()
+    func double Test()
     {
         return 1;
+    }
+
+    func string GetGamePath()
+    {
+        return "Idk how to get this but will fix later";
     }
 }
