@@ -1,0 +1,11 @@
+1)Create obj_modloader
+
+gml_Object_obj_modloader_Create_0
+dir = program_directory
+my_funcion = external_define("UTModLoader.dll", "TestFunction", 0, 0, 0)
+var _a = external_call(my_funcion)
+modsdir = _a
+external_free("UTModLoader.dll")
+
+gml_Object_obj_modloader_Draw_0
+scr_drawtext_centered(160, 232, modsdir)

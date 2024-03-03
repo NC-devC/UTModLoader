@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-#define func extern "C" __declspec(dllexport)
+#define func __declspec(dllexport)
 
 BOOL APIENTRY DllMain( HMODULE hModule,
                        DWORD  ul_reason_for_call,
@@ -22,15 +22,9 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     return TRUE;
 }
 
-func double TestFunction() {
-    ofstream file("C:\\Users\\DELL\\Desktop\\test.txt");
-    if (file.is_open()) {
-        file << "Функция TestFunction выполнена успешно!";
-        file.close();
+extern "C" {
+    func double TestFunction()
+    {
         return 1;
     }
-    else {
-        return 0;
-    }
-    return 1;
 }
