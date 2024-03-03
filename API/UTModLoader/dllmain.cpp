@@ -22,10 +22,24 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     return TRUE;
 }
 
+class ModPackage
+{
+    string author;
+    string name;
+    string description;
+    string version;
+    int versioncode;
+};
+
 extern "C" {
     func double Test()
     {
         return 1;
+    }
+
+    func string InitMod(string name)
+    {
+        return "None";
     }
 
     func string GetGamePath()
@@ -40,7 +54,13 @@ extern "C" {
 
     func string GetModsPath()
     {
-        string result = GetGamePath() + "\Mods";
+        string result = GetGamePath() + "\\Mods\\";
         return result;
+    }
+    
+    func double MsgBox(string log)
+    {
+        MessageBoxA(NULL, log.c_str(), "Game Path", MB_OK);
+        return 1;
     }
 }
