@@ -1,0 +1,7 @@
+{
+    "package": "com.nc.testmod",
+
+    "author": "NC",
+    "name": "TestMod",
+    "description": "This mod is a example for UT mod loader!"
+}
