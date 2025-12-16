@@ -1,5 +1,0 @@
-if($myroom == room_ruins7)
-{
-    sprite_add(spr_mranttenna, ruins/spr_mranttenna, 1)
-    createnpc(90,240,ruins/mranttenna,$latestsprite)
-}
