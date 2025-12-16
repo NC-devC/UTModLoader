@@ -1,3 +1,3 @@
-!/Client/data.win
-!/Client/datacopy.win
-!/Client/*.ogg
+Client/data.win
+Client/Undertale/data.win
+Client/Undertale/*.ogg
