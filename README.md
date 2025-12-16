@@ -15,9 +15,9 @@ If you would do changes for the Engine, you need to overwrite files in UTMT dire
 You can add new objects, but write it to the ApplyPatch script too.
 
 **TODO:**
-Rework if statement handling logic
-Support variables
-Custom npc refactoring(more functions to do with)
+Rework if statement handling logic,
+Support variables,
+Custom npc refactoring(more functions to do with),
 Mods menu
 
 **UndertaleModLoader (Русское описание):**
@@ -37,7 +37,7 @@ If you would do changes for the Engine, you need to overwrite files in UTMT dire
 You can add new objects, but write it to the ApplyPatch script too.
 
 **СДЕЛАТЬ:**
-Переработать логику условий if
-Добавить поддержку переменных
-Рефакторинг пользовательских НПС(больше функций к ним)
+Переработать логику условий if,
+Добавить поддержку переменных,
+Рефакторинг пользовательских НПС(больше функций к ним),
 Меню модов
