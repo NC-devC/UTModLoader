@@ -1,7 +1,3 @@
-// Piracy is bad!
-data.win
-test/data.win
-test/Undertale/data.win
-// Builds.
-API/UTModLoader/Release
-API/UTModLoader/.vs
+!/Client/data.win
+!/Client/datacopy.win
+!/Client/*.ogg
