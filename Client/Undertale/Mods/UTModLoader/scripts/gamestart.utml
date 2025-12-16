@@ -1,0 +1,5 @@
+sprite_replace(bg_ruinseasynam2, ruins/bg_ruinseasynam2, 1)
+sprite_replace(bg_ruinsfixedstairs, ruins/bg_ruinsfixedstairs, 1)
+sprite_replace(bg_ruinseasynam3, ruins/bg_ruinseasynam3, 1)
+sprite_replace(bg_ruinseasynam1, ruins/bg_ruinseasynam1, 1)
+sprite_replace(spr_pillar, ruins/spr_pillar, 1)

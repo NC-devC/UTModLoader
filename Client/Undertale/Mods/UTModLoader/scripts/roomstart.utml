@@ -1,0 +1,17 @@
+if($myroom == room_ruins1)
+{
+    sprite_add(spr_coolfrog, ruins/spr_coolfrog, 1)
+    createnpc(150,240,ruins/npcruins1coolfrog,$latestsprite)
+}
+if($myroom == room_ruins7)
+{
+    sprite_add(spr_redfrog, ruins/spr_redfrog, 1)
+    createnpc(90,210,ruins/npcruins7redfrog,$latestsprite)
+    sprite_add(spr_lamp, ruins/spr_lamp, 1)
+    createnpc(190,190,ruins/lamp,$latestsprite)
+    createnpc(120,190,ruins/lamp,$latestsprite)
+    createnpc(250,20,ruins/lamp,$latestsprite)
+    createnpc(60,20,ruins/lamp,$latestsprite)
+    sprite_add(spr_kirby, ruins/spr_kirby, 1)
+    createnpc(230,210,ruins/kirby,$latestsprite)
+}
